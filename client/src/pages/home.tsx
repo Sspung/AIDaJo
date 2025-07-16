@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import Navigation from "../components/navigation";
@@ -52,15 +51,6 @@ export default function Home() {
 
   const { data: aiTools = [], isLoading: toolsLoading } = useQuery<AiTool[]>({
     queryKey: ["/api/ai-tools", selectedCategory, searchQuery],
-    queryFn: async () => {
-      const params = new URLSearchParams();
-      if (selectedCategory !== "전체") params.append("category", selectedCategory);
-      if (searchQuery) params.append("search", searchQuery);
-      
-      const response = await fetch(`/api/ai-tools?${params}`);
-      if (!response.ok) throw new Error("Failed to fetch AI tools");
-      return response.json();
-    }
   });
 
   const { data: bundles = [] } = useQuery<AiBundle[]>({

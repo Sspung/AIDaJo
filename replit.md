@@ -9,6 +9,13 @@ AI DaJo is a comprehensive AI tools discovery and recommendation platform featur
 - PostgreSQL database with Replit Auth integration
 
 ## Recent Changes
+- ✓ **Production API Configuration**: Created environment-based API routing system
+- ✓ **Build System**: Production build script with static hosting optimization
+- ✓ **Deployment Setup**: Configured for Replit backend + Hostinger frontend
+- ✓ **Code Cleanup**: Removed duplicate imports and optimized structure
+- ✓ **API Helper Functions**: Created centralized API request handling
+- ✓ **Static Website Support**: Added .htaccess for SPA routing on Hostinger
+- ✓ **Deployment Status Tool**: Created testing page for API connectivity
 - ✓ Firebase Authentication integration completed alongside existing Google OAuth
 - ✓ Firebase hooks and components created for alternative auth option
 - ✓ Updated Firebase configuration with actual AI DaJo project credentials
@@ -26,7 +33,7 @@ AI DaJo is a comprehensive AI tools discovery and recommendation platform featur
 - ✓ Fixed project structure and routing issues
 - ✓ Resolved ES module import/export problems 
 - ✓ Server running on port 5000 with Google OAuth configured
-- → Frontend module resolution issues need fixing for full UI access
+- → **Next Step**: Deploy backend to Replit Deployments, then rebuild frontend
 
 ## User Preferences
 - **Language Approach**: Additive only - preserve original Korean content, add English translations alongside
